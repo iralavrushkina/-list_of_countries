@@ -1,0 +1,208 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  min-height: 50px;
+  padding: 15px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__text {
+  color: black;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.header__btnDarkMode, .header__btnLightMode {
+  width: 150px;
+  height: 50px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-transition: -webkit-text-decoration 1s ease;
+  transition: -webkit-text-decoration 1s ease;
+  transition: text-decoration 1s ease;
+  transition: text-decoration 1s ease, -webkit-text-decoration 1s ease;
+}
+.header__btnDarkMode:hover, .header__btnLightMode:hover {
+  text-decoration: underline;
+}
+.header__btnLightMode {
+  display: none;
+  color: white;
+}
+
+.main {
+  background-color: #f4f1f1;
+  padding: 50px 65px;
+}
+.main__form {
+  margin: 0 0 50px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main__inputSearch {
+  border: none;
+  border-radius: 5px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 600px;
+          flex: 0 0 600px;
+  padding: 5px 5px 5px 60px;
+  height: 50px;
+  font-size: 16px;
+  -webkit-box-shadow: 2px 2px 8px #ccc;
+          box-shadow: 2px 2px 8px #ccc;
+}
+.main__iconSearch {
+  position: absolute;
+  top: 15px;
+  left: 25px;
+}
+.main__filter {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 150px;
+          flex: 0 0 150px;
+  height: 50px;
+  border: none;
+  background-color: none;
+  padding: 5px 20px;
+  font-size: 16px;
+  -webkit-box-shadow: 2px 2px 8px #ccc;
+          box-shadow: 2px 2px 8px #ccc;
+  border-radius: 5px;
+}
+.main__countries {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.main__countryInfo {
+  padding: 30px;
+}
+.main__countryInfo li {
+  margin: 0 0 5px;
+}
+.main__countryCard {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 300px;
+          flex: 0 0 300px;
+  height: 390px;
+  -webkit-box-shadow: 2px 2px 8px #ccc;
+          box-shadow: 2px 2px 8px #ccc;
+  border-radius: 5px;
+  background-color: white;
+  margin: 0 0 60px;
+}
+.main__countryCard img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 300px;
+  height: 200px;
+}
+.main__countryName {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0 0 35px;
+}
+.main__textLi {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 5px 0 0;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}

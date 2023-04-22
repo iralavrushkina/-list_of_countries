@@ -1,0 +1,116 @@
+@import "reset.scss";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    min-height: 50px;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__text{
+        color:black;
+        font-size: 24px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    &__btnDarkMode,
+    &__btnLightMode{
+        width: 150px;
+        height: 50px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        font-size: 16px;
+        transition: text-decoration 1s  ease;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &__btnLightMode{
+        display: none;
+        color: white;
+    }
+}
+.main{
+    background-color:#f4f1f1;
+    padding: 50px 65px;
+    &__form{
+        margin: 0 0 50px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__inputSearch{
+        border: none;
+        border-radius: 5px;
+        flex: 0 0 600px;
+        padding: 5px 5px 5px 60px;
+        height: 50px;
+        font-size: 16px;
+        box-shadow: 2px 2px 8px #ccc;
+    }
+    &__iconSearch{
+        position: absolute;
+        top:15px;
+        left:25px; 
+    }
+    &__filter{
+        flex: 0 0 150px;
+        height: 50px;
+        border: none;
+        background-color: none;
+        padding: 5px 20px;
+        font-size: 16px;
+        box-shadow: 2px 2px 8px #ccc;
+        border-radius: 5px;
+    }
+    &__countries{
+        min-height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__countryInfo{
+        padding: 30px;
+        & li{
+            margin: 0 0 5px;
+        }
+    }
+    &__countryCard{
+        flex: 0 0 300px;
+        height: 390px;
+        box-shadow: 2px 2px 8px #ccc;
+        border-radius: 5px;
+        background-color: white;
+        margin: 0 0 60px;
+        & img {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            width: 300px;
+            height: 200px;
+        }
+    }
+    &__countryName{
+        font-size: 18px;
+        font-weight: 800;
+        margin: 0 0 35px;
+    }
+    &__textLi{
+        font-size: 15px;
+        font-weight: 600;
+        margin: 0 5px 0 0;
+    }
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.dark{
+    background-color: black;
+    color: white;
+}
